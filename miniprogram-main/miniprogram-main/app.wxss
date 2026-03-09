@@ -1,0 +1,18 @@
+/* app.wxss */
+.tab-bar {
+  height: 100rpx !important; /* 强制高度 */
+  padding-bottom: env(safe-area-inset-bottom); /* 适配iPhoneX+ */
+}
+
+.tab-bar-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.tab-bar-text {
+  font-size: 24rpx;
+  margin-top: 8rpx; /* 文字与图标间距 */
+}

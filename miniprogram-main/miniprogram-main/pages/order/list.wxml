@@ -1,0 +1,82 @@
+<!-- pages/order/list.wxml -->
+<view class="container">
+  <!-- 标签栏 -->
+  <view class="tabs">
+    <view 
+      wx:for="{{tabs}}" 
+      wx:key="id"
+      class="tab-item {{activeTab === item.id ? 'active' : ''}}"
+      bindtap="switchTab"
+      data-id="{{item.id}}"
+    >
+      {{item.name}}
+    </view>
+  </view>
+
+  <!-- 加载中 -->
+  <view class="loading-container" wx:if="{{isLoading}}">
+    <image src="/images/loading.gif" class="loading-icon"/>
+    <text>加载中...</text>
+  </view>
+
+  <!-- 空订单提示 -->
+  <view class="empty-tip" wx:if="{{!isLoading && orders.length === 0}}">
+    <image src="/images/empty-order.png" class="empty-icon"/>
+    <text>暂无相关订单</text>
+  </view>
+
+  <!-- 订单列表 -->
+  <view class="order-list" wx:if="{{!isLoading && orders.length > 0}}">
+    <view class="order-item" wx:for="{{orders}}" wx:key="id">
+      <!-- 订单头部 -->
+      <view class="order-header">
+        <text class="order-id">订单号: {{item.id}}</text>
+        <text class="order-status {{item.status}}">
+          {{item.status === 'pending' ? '待付款' : 
+            item.status === 'completed' ? '已完成' : 
+            item.status === 'canceled' ? '已取消' : 
+            item.status === 'refund' ? '退款中' : 
+            item.status === 'refunded' ? '已退款' : '未知状态'}}
+        </text>
+      </view>
+
+      <!-- 订单商品 -->
+      <view class="order-products" bindtap="viewOrderDetail" data-id="{{item.id}}">
+        <view wx:for="{{item.items}}" wx:for-item="product" wx:key="id" class="product-item">
+          <image src="{{product.img}}" class="product-image"/>
+          <view class="product-info">
+            <text class="product-name">{{product.name}}</text>
+            <view class="product-price-qty">
+              <text class="product-price">¥{{product.price}}</text>
+              <text class="product-qty">x{{product.quantity}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <!-- 订单底部 -->
+      <view class="order-footer">
+        <view class="order-total">
+          <text>共{{item.items.length}}件商品</text>
+          <text>实付：<text class="price">¥{{item.totalAmount}}</text></text>
+        </view>
+        <view class="order-actions">
+          <!-- 待付款订单显示取消和付款按钮 -->
+          <block wx:if="{{item.status === 'pending'}}">
+            <button class="btn-cancel" bindtap="cancelOrder" data-id="{{item.id}}">取消订单</button>
+            <button class="btn-pay" bindtap="payOrder" data-id="{{item.id}}">立即付款</button>
+          </block>
+          <!-- 已完成订单显示再次购买和申请退款按钮 -->
+          <block wx:elif="{{item.status === 'completed'}}">
+            <button class="btn-refund" bindtap="applyRefund" data-id="{{item.id}}">申请退款</button>
+            <button class="btn-rebuy" bindtap="rebuy" data-id="{{item.id}}">再次购买</button>
+          </block>
+          <!-- 已取消订单只显示删除按钮 -->
+          <block wx:elif="{{item.status === 'canceled'}}">
+            <button class="btn-delete" bindtap="deleteOrder" data-id="{{item.id}}">删除订单</button>
+          </block>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

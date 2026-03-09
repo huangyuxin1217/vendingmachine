@@ -1,0 +1,20 @@
+<!-- pages/location/index.wxml -->
+<map 
+  id="map"
+  longitude="{{longitude}}"
+  latitude="{{latitude}}"
+  markers="{{markers}}"
+  scale="{{scale}}"
+  show-location
+  bindmarkertap="onMarkerTap"
+  style="width: 100%; height: 100vh;"
+>
+  <cover-view class="refresh-btn" bindtap="refreshLocation">
+    <cover-image src="/images/location_refresh.png" class="icon"/>
+    <cover-text>刷新定位</cover-text>
+  </cover-view>
+  
+  <cover-view class="loading-indicator" wx:if="{{isLoading}}">
+    <cover-view class="loading-text">位置获取中...</cover-view>
+  </cover-view>
+</map>

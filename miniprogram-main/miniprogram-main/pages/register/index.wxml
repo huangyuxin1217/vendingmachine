@@ -1,0 +1,86 @@
+<!-- filepath: pages/register/index.wxml -->
+<view class="container">
+  <view class="register-header">
+    <image src="/images/logo.png" class="logo" mode="aspectFit"></image>
+    <view class="title">智能售货机</view>
+  </view>
+  
+  <view class="register-form">
+    <view class="input-group">
+      <text class="label">用户名</text>
+      <input 
+        class="input" 
+        placeholder="请输入用户名" 
+        value="{{username}}" 
+        bindinput="onUsernameInput"
+      />
+    </view>
+    
+    <view class="input-group">
+      <text class="label">密码</text>
+      <view class="input-with-icon">
+        <input 
+          class="input" 
+          placeholder="请输入密码" 
+          password="{{!showPassword}}" 
+          value="{{password}}" 
+          bindinput="onPasswordInput"
+        />
+        <view class="password-icon" bindtap="togglePasswordVisibility">
+          <image src="{{showPassword ? '/images/eye-open.png' : '/images/eye-close.png'}}" class="eye-icon"></image>
+        </view>
+      </view>
+      <!-- 添加密码强度指示器 -->
+      <view class="password-strength" wx:if="{{password}}">
+        <text class="strength-label">密码强度:</text>
+        <view class="strength-bars">
+          <view class="strength-bar {{passwordStrength >= 1 ? 'strength-' + passwordStrengthLevel : ''}}"></view>
+          <view class="strength-bar {{passwordStrength >= 2 ? 'strength-' + passwordStrengthLevel : ''}}"></view>
+          <view class="strength-bar {{passwordStrength >= 3 ? 'strength-' + passwordStrengthLevel : ''}}"></view>
+        </view>
+        <text class="strength-text {{passwordStrengthLevel}}">{{passwordStrengthText}}</text>
+      </view>
+      <view class="password-tips" wx:if="{{password}}">
+        <text>密码需要满足：</text>
+        <view class="tip-item {{hasLength ? 'valid' : ''}}">至少8个字符</view>
+        <view class="tip-item {{hasUpper ? 'valid' : ''}}">至少1个大写字母</view>
+        <view class="tip-item {{hasLower ? 'valid' : ''}}">至少1个小写字母</view>
+        <view class="tip-item {{hasNumber ? 'valid' : ''}}">至少1个数字</view>
+        <view class="tip-item {{hasSpecial ? 'valid' : ''}}">至少1个特殊字符</view>
+      </view>
+    </view>
+    
+    <view class="input-group">
+      <text class="label">确认密码</text>
+      <view class="input-with-icon">
+        <input 
+          class="input" 
+          placeholder="请再次输入密码" 
+          password="{{!showConfirmPassword}}" 
+          value="{{confirmPassword}}" 
+          bindinput="onConfirmPasswordInput"
+        />
+        <view class="password-icon" bindtap="toggleConfirmPasswordVisibility">
+          <image src="{{showConfirmPassword ? '/images/eye-open.png' : '/images/eye-close.png'}}" class="eye-icon"></image>
+        </view>
+      </view>
+      <view wx:if="{{password && confirmPassword && password !== confirmPassword}}" class="password-mismatch">
+        两次输入的密码不一致
+      </view>
+    </view>
+    
+    <button 
+      class="register-btn" 
+      bindtap="handleRegister" 
+      loading="{{isLoading}}"
+      disabled="{{isLoading || !canRegister}}"
+    >
+      注册
+    </button>
+    
+    <view class="tips">
+      <text>已有账号？</text>
+      <text class="login-link" bindtap="goToLogin">点击登录</text>
+    </view>
+  </view>
+</view>

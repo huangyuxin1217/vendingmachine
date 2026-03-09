@@ -1,0 +1,38 @@
+<!-- pages/admin/index.wxml -->
+<view class="admin-container">
+  <!-- 加载状态 -->
+  <view wx:if="{{isLoading}}" class="loading">
+    <image src="/images/loading.gif" class="loading-icon"/>
+    <text>数据加载中...</text>
+  </view>
+
+  <!-- 数据展示 -->
+  <view wx:else class="data-list">
+    <view 
+      wx:for="{{salesData}}"
+      wx:key="device_id"
+      class="data-card"
+    >
+      <view class="data-row">
+        <image src="/images/icon-device.png" class="data-icon"/>
+        <text class="data-label">设备ID：</text>
+        <text class="data-value">{{item.device_id}}</text>
+      </view>
+      <view class="data-row">
+        <image src="/images/icon-product.png" class="data-icon"/>
+        <text class="data-label">商品：</text>
+        <text class="data-value">{{item.product}}</text>
+      </view>
+      <view class="data-row">
+        <image src="/images/icon-sales.png" class="data-icon"/>
+        <text class="data-label">销量：</text>
+        <text class="data-value">{{item.sales}}件</text>
+      </view>
+      <view class="data-row">
+        <image src="/images/icon-time.png" class="data-icon"/>
+        <text class="data-label">时间：</text>
+        <text class="data-value">{{item.time}}</text>
+      </view>
+    </view>
+  </view>
+</view>

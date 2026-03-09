@@ -1,0 +1,107 @@
+/* filepath: pages/login/index.wxss */
+.container {
+    padding: 40rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .login-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60rpx;
+    margin-top: 80rpx;
+  }
+  
+  .logo {
+    width: 180rpx;
+    height: 180rpx;
+    margin-bottom: 20rpx;
+  }
+  
+  .title {
+    font-size: 40rpx;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .login-form {
+    width: 100%;
+    padding: 40rpx;
+    background-color: #fff;
+    border-radius: 12rpx;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-sizing: border-box; /* 添加这行确保内边距不会导致溢出 */
+  }
+  
+  .input-group {
+    margin-bottom: 30rpx;
+  }
+  
+  .label {
+    display: block;
+    font-size: 28rpx;
+    color: #666;
+    margin-bottom: 10rpx;
+  }
+  
+  .input {
+    width: 100%;
+    height: 80rpx;
+    border: 1px solid #ddd;
+    border-radius: 8rpx;
+    padding: 0 20rpx;
+    font-size: 28rpx;
+    box-sizing: border-box; /* 添加这行确保宽度包含内边距和边框 */
+  }
+  
+  .login-btn {
+    width: 100%;
+    height: 88rpx;
+    background-color: #e74c3c;
+    color: white;
+    font-size: 32rpx;
+    margin-top: 40rpx;
+    margin-bottom: 20rpx;
+  }
+  
+  .tips {
+    font-size: 24rpx;
+    color: #999;
+    text-align: center;
+    margin-top: 20rpx;
+  }
+
+  .register-link {
+    color: #e74c3c;
+    margin-left: 10rpx;
+  }
+
+  .input-with-icon {
+    position: relative;
+    width: 100%;
+  }
+  
+  .password-icon {
+    position: absolute;
+    right: 20rpx;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40rpx;
+    height: 40rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  .eye-icon {
+    width: 36rpx;
+    height: 36rpx;
+  }
+  
+  /* 确保输入框中的文本不会与图标重叠 */
+  .input-with-icon .input {
+    padding-right: 70rpx;
+  }

@@ -1,0 +1,97 @@
+现在，我建立好了MySQl数据库,其中数据库格式为
+orders	id	int(11)	NO	PRI		auto_increment
+orders	user_id	int(11)	YES	MUL		
+orders	product_id	int(11)	YES	MUL		
+orders	quantity	int(11)	YES			
+orders	total_price	decimal(10,2)	YES			
+orders	created_at	datetime	YES			
+orders	vending_machine_id	int(11)	YES	MUL		
+payments	id	int(11)	NO	PRI		auto_increment
+payments	users_id	int(11)	YES	MUL		
+payments	order_id	int(11)	YES	MUL		
+payments	method	varchar(50)	YES			
+payments	amount	int(11)	YES			
+payments	paid_at	datetime	YES			
+products	id	int(11)	NO	PRI		auto_increment
+products	name	varchar(100)	YES			
+products	price	decimal(5,2)	YES			
+products	stock	int(11)	YES			
+products	location	varchar(20)	YES			
+users	id	int(11)	NO	PRI		auto_increment
+users	username	varchar(50)	YES			
+users	password	varchar(225)	YES			
+users	balance	decimal(10,2)	YES			
+vending_machines	id	int(11)	NO	PRI		auto_increment
+vending_machines	status	varchar(20)	YES			
+vending_machines	name	varchar(50)	YES			
+vending_machines	locations	varchar(100)	YES			
+vending_machine_products	vending_machine_id	int(11)	NO	PRI		
+vending_machine_products	product_id	int(11)	NO	PRI		
+vending_machine_products	stock	int(11)	YES		
+我的 服务器信息如下
+1.外网IP为47.108.141.135，使用flask路由，开放5001端口
+2.数据库名为vending_mysql
+3.数据库内已存入以下数据
+    a.orders表中存入192条数据（为订单表）
+    b.payments表中没存入数据（期望为付款表）
+    c.products表中数据如下（
+1	农夫山泉	2.50	100	A区1排
+2	可口可乐	3.00	150	A区2排
+3	东鹏特饮	5.00	80	B区1排
+4	乐事薯片青瓜味	6.50	60	B区2排
+5	卫龙大面筋	4.00	120	C区1排
+6	旺仔牛奶	5.50	90	C区2排
+7	红牛罐装	7.00	70	D区1排
+8	奥利奥巧克力夹心	8.00	50	D区2排
+9	雀巢咖啡瓶装	6.00	100	E区1排
+10	康师傅红烧牛肉面	4.50	200	E区2排
+11	维他柠檬茶	3.50	110	F区1排
+    ）
+    d.users表中，id为1-999的测试数据，username对应为001-999，password均初始化为123456，balance全初始化为1000.00
+    e.vending_machine_products表为空
+    f.vending_machines表id为1-999，其余为空
+4.写flask路由文件的地址为/www/wwwroot/file-upload-server/app.py，已有代码为工作区的app.py中的内容
+5.服务器我使用的宝塔面板
+现在，我需要完成如下功能：
+1.小程序部分
+    a.按照一般性小程序的设计，修改首页部分能够下拉刷新库存
+    b.修改“我的”页面，修改信息部分未完成，要求能够修改昵称
+    c.登录部分完善，要求向数据库请求，账户名为存储在users表中的数据
+2.连接数据库部分
+    a.要求各方面使用数据库的信息，避免直接在本地运算
+3.api部分可能是重点，你需要重点描述，我使用的是apipost
+
+AI：
+### 项目背景
+我已搭建好服务器与数据库环境，详细信息如下：
+- **服务器外网IP**：`47.108.141.135`，通过**宝塔面板**管理
+- **Flask后端**：运行于 `/www/wwwroot/file-upload-server/app.py`，监听**5001端口**，其中现有的内容在工作区的app.py文件中
+- **MySQL数据库**：
+  - **数据库名**：`vending_mysql`
+  - **数据表与现状**：
+    - `orders`：已有192条订单数据
+    - `payments`：为空（未来用于存储支付信息）
+    - `products`：已有11条商品数据（如农夫山泉、可口可乐等）
+    - `users`：ID为1-999的测试用户（用户名001-999，密码初始为123456，余额1000.00）
+    - `vending_machine_products`：为空（后续存放售货机库存）
+    - `vending_machines`：已有ID为1-999的空售货机记录
+### 现需完成的内容
+#### 1. 小程序端
+- **首页功能**：
+  - 支持**下拉刷新**，实时获取数据库中各商品**库存信息**。
+- **我的页面**：
+  - 支持**修改昵称**，并同步更新到数据库的 `users.username` 字段。
+- **登录功能完善**：
+  - 用户通过**输入用户名和密码**登录小程序，验证账号密码是否匹配数据库 `users` 表。
+  - 登录成功后，保持用户状态。
+#### 2. 数据库连接要求
+- 所有数据（用户信息、库存、订单、支付等）**实时从数据库获取或写入**。
+- 禁止本地静态模拟数据，要真正读写MySQL数据库。
+#### 3. 后端（Flask API）部分
+重点要求如下：
+- 建立健全的 API 接口，配合小程序使用，使用 **ApiPost** 工具测试接口。
+- 接口安全性、数据校验、异常处理要到位。
+- 需要提供的接口由你设计
+### 补充要求
+- 后端API设计符合一般小程序开发规范（如返回统一格式JSON，附带状态码和提示信息）。
+- 需要明确后端各接口的请求方式（GET/POST）、参数格式、返回示例。

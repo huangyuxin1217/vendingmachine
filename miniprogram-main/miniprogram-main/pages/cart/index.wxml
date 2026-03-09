@@ -1,0 +1,69 @@
+<!-- pages/cart/index.wxml -->
+<view class="container">
+  <!-- 空购物车提示 -->
+  <view class="empty-cart" wx:if="{{isEmpty}}">
+    <image src="/images/empty-cart.png" class="empty-cart-image"/>
+    <text class="empty-cart-text">购物车还是空的</text>
+    <navigator url="/pages/index/index" open-type="switchTab" class="shopping-btn">
+      去购物
+    </navigator>
+  </view>
+  
+  <!-- 购物车内容 -->
+  <block wx:else>
+    <!-- 购物车项目列表 -->
+    <view class="cart-list">
+      <!-- 全选 -->
+      <view class="select-all-container">
+        <view class="select-box {{allSelected ? 'selected' : ''}}" bindtap="onSelectAll">
+          <icon wx:if="{{allSelected}}" type="success" size="16" color="#e74c3c"/>
+        </view>
+        <text>全选</text>
+      </view>
+      
+      <!-- 购物车项目 -->
+      <view 
+        wx:for="{{cartItems}}" 
+        wx:key="index"
+        class="cart-item"
+      >
+        <!-- 选择框 -->
+        <view class="select-box {{item.selected ? 'selected' : ''}}" bindtap="onItemSelect" data-index="{{index}}">
+          <icon wx:if="{{item.selected}}" type="success" size="16" color="#e74c3c"/>
+        </view>
+        
+        <!-- 商品图片 -->
+        <image src="{{item.img}}" class="item-image" mode="aspectFill"/>
+        
+        <!-- 商品信息 -->
+        <view class="item-info">
+          <text class="item-name">{{item.name}}</text>
+          <text class="item-price">¥{{item.price}}</text>
+          
+          <!-- 数量控制 -->
+          <view class="quantity-control">
+            <view class="quantity-btn" bindtap="decreaseQuantity" data-index="{{index}}">-</view>
+            <text class="quantity-display">{{item.quantity}}</text>
+            <view class="quantity-btn" bindtap="increaseQuantity" data-index="{{index}}">+</view>
+            
+            <!-- 删除商品 -->
+            <view class="remove-btn" bindtap="removeItem" data-index="{{index}}">
+              <icon type="clear" size="18" color="#999"/>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    
+    <!-- 底部结算栏 -->
+    <view class="checkout-bar">
+      <view class="total-container">
+        <text>合计:</text>
+        <text class="total-price">¥{{totalPrice}}</text>
+      </view>
+      <view class="checkout-btn" bindtap="goToCheckout">
+        {{isCheckout ? '立即付款' : '去结算'}}
+      </view>
+    </view>
+  </block>
+</view>

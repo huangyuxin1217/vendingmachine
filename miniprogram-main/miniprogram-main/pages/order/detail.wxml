@@ -1,0 +1,101 @@
+<!-- pages/order/detail.wxml -->
+<view class="container">
+  <!-- 加载中 -->
+  <view class="loading-container" wx:if="{{isLoading}}">
+    <image src="/images/loading.gif" class="loading-icon"/>
+    <text>加载中...</text>
+  </view>
+
+  <!-- 订单详情 -->
+  <block wx:if="{{!isLoading && order}}">
+    <!-- 订单状态 -->
+    <view class="status-card">
+      <view class="status-title">
+        <text class="status {{order.status}}">
+          {{order.status === 'pending' ? '待付款' : 
+            order.status === 'completed' ? '已完成' : 
+            order.status === 'canceled' ? '已取消' : 
+            order.status === 'refund' ? '退款中' : 
+            order.status === 'refunded' ? '已退款' : '未知状态'}}
+        </text>
+      </view>
+      <view class="status-desc" wx:if="{{order.status === 'pending'}}">
+        请尽快完成支付，以免订单自动取消
+      </view>
+      <view class="status-desc" wx:elif="{{order.status === 'completed'}}">
+        订单已完成，感谢您的购买！
+      </view>
+      <view class="status-desc" wx:elif="{{order.status === 'canceled'}}">
+        订单已取消
+      </view>
+      <view class="status-desc" wx:elif="{{order.status === 'refund'}}">
+        退款申请处理中，请耐心等待
+      </view>
+    </view>
+
+    <!-- 商品信息 -->
+    <view class="section-card">
+      <view class="section-title">商品信息</view>
+      <view class="product-list">
+        <view wx:for="{{order.items}}" wx:key="id" class="product-item">
+          <image src="{{item.img}}" class="product-image"/>
+          <view class="product-info">
+            <text class="product-name">{{item.name}}</text>
+            <view class="product-price-qty">
+              <text class="product-price">¥{{item.price}}</text>
+              <text class="product-qty">x{{item.quantity}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <!-- 订单信息 -->
+    <view class="section-card">
+      <view class="section-title">订单信息</view>
+      <view class="info-item">
+        <text class="info-label">订单编号</text>
+        <text class="info-value">{{order.id}}</text>
+      </view>
+      <view class="info-item">
+        <text class="info-label">创建时间</text>
+        <text class="info-value">{{order.formattedTime}}</text>
+      </view>
+      <view class="info-item" wx:if="{{order.status === 'completed'}}">
+        <text class="info-label">支付时间</text>
+        <text class="info-value">{{order.formattedPayTime}}</text>
+      </view>
+    </view>
+
+    <!-- 金额信息 -->
+    <view class="section-card">
+      <view class="section-title">金额信息</view>
+      <view class="info-item">
+        <text class="info-label">商品总价</text>
+        <text class="info-value">¥{{order.totalAmount}}</text>
+      </view>
+      <view class="info-item">
+        <text class="info-label">运费</text>
+        <text class="info-value">¥0.00</text>
+      </view>
+      <view class="info-item total">
+        <text class="info-label">实付款</text>
+        <text class="info-value price">¥{{order.totalAmount}}</text>
+      </view>
+    </view>
+
+    <!-- 底部操作栏 -->
+    <view class="footer">
+      <!-- 待付款订单显示取消和付款按钮 -->
+      <block wx:if="{{order.status === 'pending'}}">
+        <button class="btn-cancel" bindtap="cancelOrder">取消订单</button>
+        <button class="btn-pay" bindtap="payOrder">立即付款</button>
+      </block>
+      <!-- 已完成订单显示再次购买和申请退款按钮 -->
+      <block wx:elif="{{order.status === 'completed'}}">
+        <button class="btn-refund" bindtap="applyRefund">申请退款</button>
+        <button class="btn-rebuy" bindtap="rebuy">再次购买</button>
+      </block>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,49 @@
+<!-- filepath: pages/login/index.wxml -->
+<view class="container">
+  <view class="login-header">
+    <image src="/images/logo.png" class="logo" mode="aspectFit"></image>
+    <view class="title">智能售货机</view>
+  </view>
+  
+  <view class="login-form">
+    <view class="input-group">
+      <text class="label">用户名</text>
+      <input 
+        class="input" 
+        placeholder="请输入用户名" 
+        value="{{username}}" 
+        bindinput="onUsernameInput"
+      />
+    </view>
+    
+    <view class="input-group">
+      <text class="label">密码</text>
+      <view class="input-with-icon">
+        <input 
+          class="input" 
+          placeholder="请输入密码" 
+          password="{{!showPassword}}" 
+          value="{{password}}" 
+          bindinput="onPasswordInput"
+        />
+        <view class="password-icon" bindtap="togglePasswordVisibility">
+          <image src="{{showPassword ? '/images/eye-open.png' : '/images/eye-close.png'}}" class="eye-icon"></image>
+        </view>
+      </view>
+    </view>
+    
+    <button 
+      class="login-btn" 
+      bindtap="handleLogin" 
+      loading="{{isLoading}}"
+      disabled="{{isLoading}}"
+    >
+      登录
+    </button>
+    
+    <view class="tips">
+      <text>还没有账号？</text>
+      <text class="register-link" bindtap="goToRegister">立即注册</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,82 @@
+<!-- filepath: pages/profile/index.wxml -->
+<view class="profile-container">
+  <!-- 用户信息头 -->
+  <view class="user-header">
+    <image src="{{avatarUrl || '/images/default-avatar.png'}}" class="avatar"/>
+    
+    <!-- 昵称展示/编辑区域 -->
+    <view class="username-container">
+      <block wx:if="{{!isEditingName}}">
+        <text class="username">{{nickName || '未登录用户'}}</text>
+        <image 
+          wx:if="{{hasLogin}}" 
+          src="/images/icon-edit.png" 
+          class="edit-icon" 
+          bindtap="startEditName"
+        />
+      </block>
+      
+      <!-- 昵称编辑框 -->
+      <view wx:else class="nickname-edit-box">
+        <input 
+          class="nickname-input" 
+          value="{{newNickName}}" 
+          focus="{{true}}"
+          bindinput="onNicknameInput"
+          placeholder="请输入新昵称"
+        />
+        <view class="nickname-actions">
+          <button size="mini" bindtap="cancelEdit">取消</button>
+          <button size="mini" type="primary" bindtap="saveNickname">保存</button>
+        </view>
+      </view>
+    </view>
+    
+    <button wx:if="{{!hasLogin}}" bindtap="login">登录</button>
+  </view>
+
+  <!-- 订单状态 -->
+  <view class="order-status">
+    <navigator url="/pages/order/list" class="status-item">
+      <image src="/images/icon-order.png" class="status-icon"/>
+      <text>全部订单</text>
+    </navigator>
+    <navigator url="/pages/order/list?type=pending" class="status-item">
+      <text class="count" wx:if="{{orderCounts.pending > 0}}">{{orderCounts.pending}}</text>
+      <image src="/images/icon-pending.png" class="status-icon"/>
+      <text>待付款</text>
+    </navigator>
+    <navigator url="/pages/order/list?type=completed" class="status-item">
+      <text class="count" wx:if="{{orderCounts.completed > 0}}">{{orderCounts.completed}}</text>
+      <image src="/images/icon-completed.png" class="status-icon"/>
+      <text>已完成</text>
+    </navigator>
+    <navigator url="/pages/order/list?type=afterSale" class="status-item">
+      <text class="count" wx:if="{{orderCounts.afterSale > 0}}">{{orderCounts.afterSale}}</text>
+      <image src="/images/icon-refund.png" class="status-icon"/>
+      <text>售后</text>
+    </navigator>
+  </view>
+
+  <!-- 功能入口 -->
+  <view class="func-list">
+    <!-- 注释掉管理员数据入口 -->
+    <!-- <navigator url="/pages/admin/index" class="func-item">
+      <image src="/images/icon-admin.png" class="func-icon"/>
+      <text>管理员数据</text>
+    </navigator> -->
+    <view class="func-item" bindtap="startEditName">
+      <image src="/images/icon-settings.png" class="func-icon"/>
+      <text>修改昵称</text>
+    </view>
+    <!-- 添加用户政策入口 -->
+    <navigator url="/pages/policy/index" class="func-item">
+      <image src="/images/icon-policy.png" class="func-icon"/>
+      <text>用户政策</text>
+    </navigator>
+    <view wx:if="{{hasLogin}}" class="func-item" bindtap="logout">
+      <image src="/images/icon-logout.png" class="func-icon"/>
+      <text>退出登录</text>
+    </view>
+  </view>
+</view>

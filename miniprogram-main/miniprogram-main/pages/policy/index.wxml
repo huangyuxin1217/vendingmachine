@@ -1,0 +1,97 @@
+<!-- filepath: pages/policy/index.wxml -->
+<view class="container">
+  <view class="policy-header">
+    <text class="title">用户政策</text>
+    <text class="subtitle">最近更新时间：2025年4月30日</text>
+  </view>
+  
+  <view class="policy-content">
+    <view class="section">
+      <view class="section-title">1. 引言</view>
+      <view class="section-content">
+        <text>欢迎使用智能售货机小程序。本政策旨在帮助您了解我们如何收集、使用和保护您的个人信息，以及您享有的相关权利。请您在使用我们的服务前仔细阅读本政策。</text>
+      </view>
+    </view>
+    
+    <view class="section">
+      <view class="section-title">2. 信息收集</view>
+      <view class="section-content">
+        <text class="bold">我们收集的信息包括：</text>
+        <view class="list-item">• 账号信息：用户名、密码等您注册账号时提供的信息</view>
+        <view class="list-item">• 交易信息：订单记录、支付信息、消费习惯等</view>
+        <view class="list-item">• 设备信息：设备型号、操作系统、唯一设备标识符等</view>
+        <view class="list-item">• 使用数据：您如何使用我们的服务、访问时间等</view>
+      </view>
+    </view>
+    
+    <view class="section">
+      <view class="section-title">3. 信息使用</view>
+      <view class="section-content">
+        <text class="bold">我们使用您的信息用于：</text>
+        <view class="list-item">• 提供、维护和改进我们的服务</view>
+        <view class="list-item">• 处理您的交易和请求</view>
+        <view class="list-item">• 发送通知、更新和安全警报</view>
+        <view class="list-item">• 防止欺诈和滥用行为</view>
+        <view class="list-item">• 个性化您的体验并提供推荐</view>
+        <view class="list-item">• 遵守法律法规要求</view>
+      </view>
+    </view>
+    
+    <view class="section">
+      <view class="section-title">4. 信息安全</view>
+      <view class="section-content">
+        <text>我们采取适当的技术和组织措施来保护您的个人信息，防止未经授权的访问、使用或泄露。这些措施包括数据加密、访问控制、安全审计等。然而，请注意任何互联网传输或存储方式都不能保证100%的安全性。</text>
+      </view>
+    </view>
+    
+    <view class="section">
+      <view class="section-title">5. 信息共享</view>
+      <view class="section-content">
+        <text>除非有法律要求、获得您的同意或在以下情况下，我们不会与第三方共享您的个人信息：</text>
+        <view class="list-item">• 与服务提供商共享（如支付处理商）</view>
+        <view class="list-item">• 为满足法律法规要求</view>
+        <view class="list-item">• 保护我们或他人的权利和安全</view>
+      </view>
+    </view>
+    
+    <view class="section">
+      <view class="section-title">6. 用户权利</view>
+      <view class="section-content">
+        <text class="bold">您对自己的个人信息享有以下权利：</text>
+        <view class="list-item">• 访问权：查询我们收集的关于您的信息</view>
+        <view class="list-item">• 更正权：更正不准确的个人信息</view>
+        <view class="list-item">• 删除权：在特定情况下请求删除您的个人信息</view>
+        <view class="list-item">• 限制处理权：在特定情况下限制我们处理您的信息</view>
+        <view class="list-item">• 数据可携带权：以结构化格式获取您的数据</view>
+      </view>
+    </view>
+    
+    <view class="section">
+      <view class="section-title">7. Cookie和类似技术</view>
+      <view class="section-content">
+        <text>我们使用Cookie和类似技术来确保网站功能正常、了解您的偏好、提供个性化体验并分析我们服务的使用情况。您可以通过浏览器设置控制或拒绝这些Cookie。</text>
+      </view>
+    </view>
+    
+    <view class="section">
+      <view class="section-title">8. 儿童隐私</view>
+      <view class="section-content">
+        <text>我们的服务不面向16岁以下儿童。如果我们得知已收集了16岁以下儿童的个人信息，我们会立即采取措施删除这些信息。</text>
+      </view>
+    </view>
+    
+    <view class="section">
+      <view class="section-title">9. 政策更新</view>
+      <view class="section-content">
+        <text>我们可能会不时更新本政策，更新将通过在小程序内发布新版政策的方式通知您。继续使用我们的服务表示您同意最新版本的政策。</text>
+      </view>
+    </view>
+    
+    <view class="section">
+      <view class="section-title">10. 联系我们</view>
+      <view class="section-content">
+        <text>如果您对本政策或我们的数据处理实践有任何问题、意见或请求，请联系我们：20245426@stu.cqu.edu.cn</text>
+      </view>
+    </view>
+  </view>
+</view>

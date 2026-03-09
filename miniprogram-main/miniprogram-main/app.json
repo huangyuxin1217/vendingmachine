@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/location/index",
+    "pages/profile/index",
+    "pages/logs/logs",
+    "pages/admin/index",
+    "pages/product/detail",
+    "pages/cart/index",
+    "pages/order/list",
+    "pages/order/detail",
+    "pages/login/index",
+    "pages/register/index",
+    "pages/policy/index"
+  ],
+
+  "permission": {
+    "scope.userLocation": {
+      "desc": "需要获取您的位置以展示周边售货机"
+    }
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icon-home.png",
+        "selectedIconPath": "images/icon-home-active.png"
+      },
+      {
+        "pagePath": "pages/cart/index",
+        "text": "购物车",
+        "iconPath": "images/icon-cart.png",
+        "selectedIconPath": "images/icon-cart-active.png"
+      },
+      {
+        "pagePath": "pages/location/index",
+        "text": "周边",
+        "iconPath": "images/icon-location.png",
+        "selectedIconPath": "images/icon-location-active.png"
+      },
+      {
+        "pagePath": "pages/profile/index",
+        "text": "我的",
+        "iconPath": "images/icon-user.png",
+        "selectedIconPath": "images/icon-user-active.png"
+      }
+    ]
+  }
+}

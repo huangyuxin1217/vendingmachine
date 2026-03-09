@@ -1,0 +1,41 @@
+<!-- pages/index/index.wxml -->
+<view class="container">
+  <!-- 顶部轮播图 -->
+  <swiper indicator-dots autoplay circular>
+    <swiper-item>
+      <image src="/images/banner1.jpg" mode="aspectFill"/>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/banner2.jpg" mode="aspectFill"/>
+    </swiper-item>
+  </swiper>
+
+  <!-- 库存加载提示 -->
+  <view wx:if="{{isLoadingStock}}" class="loading-tip">
+    <text>正在获取最新库存...</text>
+  </view>
+
+  <!-- 商品网格 -->
+  <view class="product-grid">
+    <view 
+      wx:for="{{products}}"
+      wx:key="id"
+      class="product-card"
+      data-id="{{item.id}}"
+    >
+      <image src="{{item.img}}" class="product-image" mode="aspectFill" bindtap="onProductTap" data-id="{{item.id}}"/>
+      <view class="product-info">
+        <text class="product-name" bindtap="onProductTap" data-id="{{item.id}}">{{item.name}}</text>
+        <view class="product-bottom">
+          <text class="product-price">¥{{item.price}}</text>
+          <text class="product-stock {{item.stock < 10 ? 'low-stock' : ''}}">库存: {{item.stock}}</text>
+        </view>
+        <view class="action-bar">
+          <view class="cart-btn" catchtap="addToCart" data-product="{{item}}">
+            <image src="/images/icon-cart-add.png" class="cart-icon"/>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
