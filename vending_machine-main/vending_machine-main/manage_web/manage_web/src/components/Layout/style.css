@@ -1,0 +1,64 @@
+.main-layout {
+    min-height: 100vh;
+  }
+  
+  .logo {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #e74c3c;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .site-header {
+    padding: 0 24px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    z-index: 1;
+  }
+  
+  .header-left, .header-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .trigger {
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .trigger:hover {
+    color: #e74c3c;
+  }
+  
+  .site-content {
+    margin: 24px;
+    padding: 24px;
+    background: #fff;
+    min-height: calc(100vh - 112px);
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    overflow: auto;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-dropdown {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .username {
+    margin-left: 8px;
+  }

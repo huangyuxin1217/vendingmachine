@@ -1,0 +1,1138 @@
+[
+    {
+        "user_id": "133",
+        "product_id": 8,
+        "quantity": 29,
+        "total_price": 348,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "326"
+    },
+    {
+        "user_id": "484",
+        "product_id": 5,
+        "quantity": 41,
+        "total_price": 164,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "337"
+    },
+    {
+        "user_id": "526",
+        "product_id": 11,
+        "quantity": 30,
+        "total_price": 150,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "903"
+    },
+    {
+        "user_id": "962",
+        "product_id": 2,
+        "quantity": 35,
+        "total_price": 105,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "546"
+    },
+    {
+        "user_id": "376",
+        "product_id": 9,
+        "quantity": 23,
+        "total_price": 184,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "733"
+    },
+    {
+        "user_id": "567",
+        "product_id": 1,
+        "quantity": 29,
+        "total_price": 58,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "274"
+    },
+    {
+        "user_id": "144",
+        "product_id": 3,
+        "quantity": 19,
+        "total_price": 95,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "859"
+    },
+    {
+        "user_id": "208",
+        "product_id": 10,
+        "quantity": 32,
+        "total_price": 160,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "341"
+    },
+    {
+        "user_id": "724",
+        "product_id": 11,
+        "quantity": 16,
+        "total_price": 80,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "549"
+    },
+    {
+        "user_id": "886",
+        "product_id": 3,
+        "quantity": 38,
+        "total_price": 190,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "332"
+    },
+    {
+        "user_id": "653",
+        "product_id": 3,
+        "quantity": 13,
+        "total_price": 65,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "816"
+    },
+    {
+        "user_id": "974",
+        "product_id": 1,
+        "quantity": 47,
+        "total_price": 94,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "875"
+    },
+    {
+        "user_id": "621",
+        "product_id": 1,
+        "quantity": 21,
+        "total_price": 42,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "565"
+    },
+    {
+        "user_id": "033",
+        "product_id": 6,
+        "quantity": 10,
+        "total_price": 30,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "299"
+    },
+    {
+        "user_id": "137",
+        "product_id": 4,
+        "quantity": 24,
+        "total_price": 168,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "580"
+    },
+    {
+        "user_id": "401",
+        "product_id": 6,
+        "quantity": 39,
+        "total_price": 117,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "684"
+    },
+    {
+        "user_id": "221",
+        "product_id": 11,
+        "quantity": 49,
+        "total_price": 245,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "974"
+    },
+    {
+        "user_id": "585",
+        "product_id": 6,
+        "quantity": 46,
+        "total_price": 138,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "640"
+    },
+    {
+        "user_id": "231",
+        "product_id": 5,
+        "quantity": 48,
+        "total_price": 192,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "497"
+    },
+    {
+        "user_id": "745",
+        "product_id": 9,
+        "quantity": 19,
+        "total_price": 152,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "636"
+    },
+    {
+        "user_id": "642",
+        "product_id": 9,
+        "quantity": 20,
+        "total_price": 160,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "667"
+    },
+    {
+        "user_id": "923",
+        "product_id": 10,
+        "quantity": 24,
+        "total_price": 120,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "477"
+    },
+    {
+        "user_id": "998",
+        "product_id": 7,
+        "quantity": 26,
+        "total_price": 130,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "748"
+    },
+    {
+        "user_id": "960",
+        "product_id": 5,
+        "quantity": 44,
+        "total_price": 176,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "744"
+    },
+    {
+        "user_id": "233",
+        "product_id": 3,
+        "quantity": 21,
+        "total_price": 105,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "137"
+    },
+    {
+        "user_id": "193",
+        "product_id": 3,
+        "quantity": 15,
+        "total_price": 75,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "822"
+    },
+    {
+        "user_id": "347",
+        "product_id": 10,
+        "quantity": 15,
+        "total_price": 75,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "002"
+    },
+    {
+        "user_id": "372",
+        "product_id": 8,
+        "quantity": 47,
+        "total_price": 564,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "098"
+    },
+    {
+        "user_id": "336",
+        "product_id": 3,
+        "quantity": 47,
+        "total_price": 235,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "851"
+    },
+    {
+        "user_id": "936",
+        "product_id": 10,
+        "quantity": 49,
+        "total_price": 245,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "568"
+    },
+    {
+        "user_id": "808",
+        "product_id": 8,
+        "quantity": 18,
+        "total_price": 216,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "820"
+    },
+    {
+        "user_id": "661",
+        "product_id": 7,
+        "quantity": 41,
+        "total_price": 205,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "291"
+    },
+    {
+        "user_id": "367",
+        "product_id": 6,
+        "quantity": 38,
+        "total_price": 114,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "819"
+    },
+    {
+        "user_id": "904",
+        "product_id": 11,
+        "quantity": 18,
+        "total_price": 90,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "890"
+    },
+    {
+        "user_id": "802",
+        "product_id": 7,
+        "quantity": 35,
+        "total_price": 175,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "567"
+    },
+    {
+        "user_id": "270",
+        "product_id": 4,
+        "quantity": 26,
+        "total_price": 182,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "638"
+    },
+    {
+        "user_id": "113",
+        "product_id": 11,
+        "quantity": 49,
+        "total_price": 245,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "048"
+    },
+    {
+        "user_id": "036",
+        "product_id": 9,
+        "quantity": 10,
+        "total_price": 80,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "065"
+    },
+    {
+        "user_id": "093",
+        "product_id": 9,
+        "quantity": 24,
+        "total_price": 192,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "877"
+    },
+    {
+        "user_id": "305",
+        "product_id": 2,
+        "quantity": 31,
+        "total_price": 93,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "096"
+    },
+    {
+        "user_id": "473",
+        "product_id": 11,
+        "quantity": 25,
+        "total_price": 125,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "087"
+    },
+    {
+        "user_id": "773",
+        "product_id": 4,
+        "quantity": 44,
+        "total_price": 308,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "955"
+    },
+    {
+        "user_id": "255",
+        "product_id": 8,
+        "quantity": 26,
+        "total_price": 312,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "061"
+    },
+    {
+        "user_id": "122",
+        "product_id": 1,
+        "quantity": 11,
+        "total_price": 22,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "475"
+    },
+    {
+        "user_id": "869",
+        "product_id": 5,
+        "quantity": 25,
+        "total_price": 100,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "983"
+    },
+    {
+        "user_id": "718",
+        "product_id": 2,
+        "quantity": 40,
+        "total_price": 120,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "117"
+    },
+    {
+        "user_id": "131",
+        "product_id": 8,
+        "quantity": 19,
+        "total_price": 228,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "260"
+    },
+    {
+        "user_id": "161",
+        "product_id": 1,
+        "quantity": 36,
+        "total_price": 72,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "544"
+    },
+    {
+        "user_id": "477",
+        "product_id": 5,
+        "quantity": 16,
+        "total_price": 64,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "972"
+    },
+    {
+        "user_id": "760",
+        "product_id": 1,
+        "quantity": 14,
+        "total_price": 28,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "415"
+    },
+    {
+        "user_id": "856",
+        "product_id": 4,
+        "quantity": 14,
+        "total_price": 98,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "024"
+    },
+    {
+        "user_id": "592",
+        "product_id": 8,
+        "quantity": 36,
+        "total_price": 432,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "000"
+    },
+    {
+        "user_id": "172",
+        "product_id": 3,
+        "quantity": 25,
+        "total_price": 125,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "491"
+    },
+    {
+        "user_id": "641",
+        "product_id": 7,
+        "quantity": 22,
+        "total_price": 110,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "050"
+    },
+    {
+        "user_id": "983",
+        "product_id": 6,
+        "quantity": 15,
+        "total_price": 45,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "492"
+    },
+    {
+        "user_id": "930",
+        "product_id": 8,
+        "quantity": 29,
+        "total_price": 348,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "217"
+    },
+    {
+        "user_id": "730",
+        "product_id": 10,
+        "quantity": 21,
+        "total_price": 105,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "104"
+    },
+    {
+        "user_id": "369",
+        "product_id": 8,
+        "quantity": 21,
+        "total_price": 252,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "459"
+    },
+    {
+        "user_id": "384",
+        "product_id": 4,
+        "quantity": 24,
+        "total_price": 168,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "953"
+    },
+    {
+        "user_id": "397",
+        "product_id": 3,
+        "quantity": 35,
+        "total_price": 175,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "837"
+    },
+    {
+        "user_id": "612",
+        "product_id": 11,
+        "quantity": 36,
+        "total_price": 180,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "873"
+    },
+    {
+        "user_id": "602",
+        "product_id": 11,
+        "quantity": 24,
+        "total_price": 120,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "709"
+    },
+    {
+        "user_id": "970",
+        "product_id": 5,
+        "quantity": 36,
+        "total_price": 144,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "537"
+    },
+    {
+        "user_id": "199",
+        "product_id": 8,
+        "quantity": 48,
+        "total_price": 576,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "542"
+    },
+    {
+        "user_id": "604",
+        "product_id": 9,
+        "quantity": 27,
+        "total_price": 216,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "175"
+    },
+    {
+        "user_id": "608",
+        "product_id": 7,
+        "quantity": 27,
+        "total_price": 135,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "939"
+    },
+    {
+        "user_id": "792",
+        "product_id": 10,
+        "quantity": 41,
+        "total_price": 205,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "481"
+    },
+    {
+        "user_id": "603",
+        "product_id": 6,
+        "quantity": 45,
+        "total_price": 135,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "503"
+    },
+    {
+        "user_id": "678",
+        "product_id": 3,
+        "quantity": 31,
+        "total_price": 155,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "584"
+    },
+    {
+        "user_id": "935",
+        "product_id": 9,
+        "quantity": 48,
+        "total_price": 384,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "148"
+    },
+    {
+        "user_id": "659",
+        "product_id": 9,
+        "quantity": 31,
+        "total_price": 248,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "306"
+    },
+    {
+        "user_id": "296",
+        "product_id": 8,
+        "quantity": 39,
+        "total_price": 468,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "954"
+    },
+    {
+        "user_id": "552",
+        "product_id": 1,
+        "quantity": 36,
+        "total_price": 72,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "861"
+    },
+    {
+        "user_id": "828",
+        "product_id": 6,
+        "quantity": 45,
+        "total_price": 135,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "999"
+    },
+    {
+        "user_id": "300",
+        "product_id": 3,
+        "quantity": 33,
+        "total_price": 165,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "346"
+    },
+    {
+        "user_id": "044",
+        "product_id": 10,
+        "quantity": 34,
+        "total_price": 170,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "167"
+    },
+    {
+        "user_id": "742",
+        "product_id": 8,
+        "quantity": 27,
+        "total_price": 324,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "523"
+    },
+    {
+        "user_id": "783",
+        "product_id": 2,
+        "quantity": 50,
+        "total_price": 150,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "638"
+    },
+    {
+        "user_id": "757",
+        "product_id": 11,
+        "quantity": 32,
+        "total_price": 160,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "661"
+    },
+    {
+        "user_id": "098",
+        "product_id": 10,
+        "quantity": 28,
+        "total_price": 140,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "212"
+    },
+    {
+        "user_id": "182",
+        "product_id": 1,
+        "quantity": 47,
+        "total_price": 94,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "741"
+    },
+    {
+        "user_id": "233",
+        "product_id": 1,
+        "quantity": 22,
+        "total_price": 44,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "329"
+    },
+    {
+        "user_id": "804",
+        "product_id": 11,
+        "quantity": 33,
+        "total_price": 165,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "244"
+    },
+    {
+        "user_id": "159",
+        "product_id": 5,
+        "quantity": 41,
+        "total_price": 164,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "298"
+    },
+    {
+        "user_id": "249",
+        "product_id": 10,
+        "quantity": 13,
+        "total_price": 65,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "390"
+    },
+    {
+        "user_id": "012",
+        "product_id": 10,
+        "quantity": 41,
+        "total_price": 205,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "433"
+    },
+    {
+        "user_id": "808",
+        "product_id": 6,
+        "quantity": 50,
+        "total_price": 150,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "692"
+    },
+    {
+        "user_id": "345",
+        "product_id": 10,
+        "quantity": 15,
+        "total_price": 75,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "693"
+    },
+    {
+        "user_id": "519",
+        "product_id": 6,
+        "quantity": 21,
+        "total_price": 63,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "573"
+    },
+    {
+        "user_id": "252",
+        "product_id": 11,
+        "quantity": 21,
+        "total_price": 105,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "850"
+    },
+    {
+        "user_id": "804",
+        "product_id": 7,
+        "quantity": 30,
+        "total_price": 150,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "341"
+    },
+    {
+        "user_id": "770",
+        "product_id": 6,
+        "quantity": 24,
+        "total_price": 72,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "926"
+    },
+    {
+        "user_id": "486",
+        "product_id": 10,
+        "quantity": 34,
+        "total_price": 170,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "927"
+    },
+    {
+        "user_id": "336",
+        "product_id": 4,
+        "quantity": 13,
+        "total_price": 91,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "227"
+    },
+    {
+        "user_id": "534",
+        "product_id": 10,
+        "quantity": 19,
+        "total_price": 95,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "194"
+    },
+    {
+        "user_id": "237",
+        "product_id": 6,
+        "quantity": 18,
+        "total_price": 54,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "097"
+    },
+    {
+        "user_id": "338",
+        "product_id": 3,
+        "quantity": 19,
+        "total_price": 95,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "639"
+    },
+    {
+        "user_id": "303",
+        "product_id": 5,
+        "quantity": 38,
+        "total_price": 152,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "576"
+    },
+    {
+        "user_id": "713",
+        "product_id": 11,
+        "quantity": 10,
+        "total_price": 50,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "103"
+    },
+    {
+        "user_id": "966",
+        "product_id": 2,
+        "quantity": 14,
+        "total_price": 42,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "344"
+    },
+    {
+        "user_id": "771",
+        "product_id": 1,
+        "quantity": 50,
+        "total_price": 100,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "116"
+    },
+    {
+        "user_id": "559",
+        "product_id": 10,
+        "quantity": 13,
+        "total_price": 65,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "451"
+    },
+    {
+        "user_id": "037",
+        "product_id": 4,
+        "quantity": 16,
+        "total_price": 112,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "556"
+    },
+    {
+        "user_id": "572",
+        "product_id": 6,
+        "quantity": 13,
+        "total_price": 39,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "231"
+    },
+    {
+        "user_id": "579",
+        "product_id": 11,
+        "quantity": 30,
+        "total_price": 150,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "940"
+    },
+    {
+        "user_id": "683",
+        "product_id": 8,
+        "quantity": 49,
+        "total_price": 588,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "208"
+    },
+    {
+        "user_id": "866",
+        "product_id": 8,
+        "quantity": 31,
+        "total_price": 372,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "718"
+    },
+    {
+        "user_id": "421",
+        "product_id": 6,
+        "quantity": 27,
+        "total_price": 81,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "626"
+    },
+    {
+        "user_id": "093",
+        "product_id": 1,
+        "quantity": 25,
+        "total_price": 50,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "554"
+    },
+    {
+        "user_id": "843",
+        "product_id": 11,
+        "quantity": 33,
+        "total_price": 165,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "406"
+    },
+    {
+        "user_id": "839",
+        "product_id": 5,
+        "quantity": 26,
+        "total_price": 104,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "405"
+    },
+    {
+        "user_id": "056",
+        "product_id": 4,
+        "quantity": 47,
+        "total_price": 329,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "133"
+    },
+    {
+        "user_id": "312",
+        "product_id": 1,
+        "quantity": 32,
+        "total_price": 64,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "417"
+    },
+    {
+        "user_id": "498",
+        "product_id": 2,
+        "quantity": 34,
+        "total_price": 102,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "676"
+    },
+    {
+        "user_id": "774",
+        "product_id": 4,
+        "quantity": 50,
+        "total_price": 350,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "897"
+    },
+    {
+        "user_id": "650",
+        "product_id": 4,
+        "quantity": 36,
+        "total_price": 252,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "842"
+    },
+    {
+        "user_id": "074",
+        "product_id": 5,
+        "quantity": 13,
+        "total_price": 52,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "677"
+    },
+    {
+        "user_id": "933",
+        "product_id": 6,
+        "quantity": 48,
+        "total_price": 144,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "095"
+    },
+    {
+        "user_id": "136",
+        "product_id": 10,
+        "quantity": 34,
+        "total_price": 170,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "858"
+    },
+    {
+        "user_id": "888",
+        "product_id": 8,
+        "quantity": 12,
+        "total_price": 144,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "144"
+    },
+    {
+        "user_id": "121",
+        "product_id": 2,
+        "quantity": 41,
+        "total_price": 123,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "578"
+    },
+    {
+        "user_id": "661",
+        "product_id": 1,
+        "quantity": 22,
+        "total_price": 44,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "242"
+    },
+    {
+        "user_id": "708",
+        "product_id": 4,
+        "quantity": 13,
+        "total_price": 91,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "163"
+    },
+    {
+        "user_id": "951",
+        "product_id": 3,
+        "quantity": 33,
+        "total_price": 165,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "015"
+    },
+    {
+        "user_id": "965",
+        "product_id": 4,
+        "quantity": 31,
+        "total_price": 217,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "926"
+    },
+    {
+        "user_id": "440",
+        "product_id": 9,
+        "quantity": 45,
+        "total_price": 360,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "158"
+    },
+    {
+        "user_id": "531",
+        "product_id": 2,
+        "quantity": 27,
+        "total_price": 81,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "780"
+    },
+    {
+        "user_id": "114",
+        "product_id": 7,
+        "quantity": 38,
+        "total_price": 190,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "185"
+    },
+    {
+        "user_id": "293",
+        "product_id": 7,
+        "quantity": 19,
+        "total_price": 95,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "846"
+    },
+    {
+        "user_id": "694",
+        "product_id": 1,
+        "quantity": 15,
+        "total_price": 30,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "628"
+    },
+    {
+        "user_id": "154",
+        "product_id": 7,
+        "quantity": 30,
+        "total_price": 150,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "019"
+    },
+    {
+        "user_id": "000",
+        "product_id": 11,
+        "quantity": 42,
+        "total_price": 210,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "155"
+    },
+    {
+        "user_id": "332",
+        "product_id": 8,
+        "quantity": 45,
+        "total_price": 540,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "383"
+    },
+    {
+        "user_id": "692",
+        "product_id": 11,
+        "quantity": 24,
+        "total_price": 120,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "377"
+    },
+    {
+        "user_id": "735",
+        "product_id": 2,
+        "quantity": 21,
+        "total_price": 63,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "653"
+    },
+    {
+        "user_id": "311",
+        "product_id": 9,
+        "quantity": 49,
+        "total_price": 392,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "637"
+    },
+    {
+        "user_id": "234",
+        "product_id": 5,
+        "quantity": 40,
+        "total_price": 160,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "966"
+    },
+    {
+        "user_id": "193",
+        "product_id": 11,
+        "quantity": 28,
+        "total_price": 140,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "646"
+    },
+    {
+        "user_id": "953",
+        "product_id": 7,
+        "quantity": 23,
+        "total_price": 115,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "842"
+    },
+    {
+        "user_id": "335",
+        "product_id": 9,
+        "quantity": 26,
+        "total_price": 208,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "937"
+    },
+    {
+        "user_id": "403",
+        "product_id": 4,
+        "quantity": 36,
+        "total_price": 252,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "912"
+    },
+    {
+        "user_id": "255",
+        "product_id": 6,
+        "quantity": 43,
+        "total_price": 129,
+        "created_at": "2025-04-28 17:00:01",
+        "vending_machine_id": "141"
+    }
+]

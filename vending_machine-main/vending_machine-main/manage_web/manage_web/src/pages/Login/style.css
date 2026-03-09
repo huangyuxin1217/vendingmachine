@@ -1,0 +1,31 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+  }
+  
+  .login-content {
+    width: 400px;
+  }
+  
+  .login-card {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .login-card .ant-card-head-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .login-button {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+  }
+  
+  .login-button:hover {
+    background-color: #c0392b;
+    border-color: #c0392b;
+  }

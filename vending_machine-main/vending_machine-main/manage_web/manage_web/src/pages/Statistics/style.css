@@ -1,0 +1,155 @@
+/* src/pages/Statistics/style.css */
+/* 统计页面样式 */
+.statistics-page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 20px;
+}
+
+.filter-card {
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+.statistics-filters {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+  gap: 8px;
+}
+
+.statistics-summary {
+  margin-bottom: 24px;
+}
+
+.summary-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.summary-card .ant-statistic-title {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.summary-card .ant-statistic-content {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.summary-icon {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  font-size: 24px;
+  opacity: 0.2;
+}
+
+.statistics-tabs {
+  margin-bottom: 24px;
+  display: block;
+}
+
+.table-card {
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+.tab-content {
+  padding-top: 8px;
+}
+
+.chart-card {
+  margin-bottom: 16px;
+}
+
+.chart-container {
+  height: 400px;
+  position: relative;
+  margin: 12px 0;
+  overflow-x: auto;
+}
+
+.chart-placeholder {
+  text-align: center;
+  color: #666;
+  padding: 20px 0;
+}
+
+.product-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.custom-tooltip {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tooltip-label {
+  margin: 0;
+  font-weight: 700;
+  color: #333;
+}
+
+/* 售货机时段活跃度图表 */
+.machine-activity {
+  display: flex;
+  align-items: flex-end;
+  height: 240px;
+  gap: 2px;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.hour-block {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  align-items: center;
+  position: relative;
+}
+
+.activity-level {
+  width: 100%;
+  background-color: #3498db;
+  position: absolute;
+  bottom: 0;
+  border-radius: 2px 2px 0 0;
+}
+
+.hour-label {
+  position: absolute;
+  bottom: -20px;
+  font-size: 10px;
+  color: #999;
+}
+
+@media (max-width: 768px) {
+  .statistics-filters {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .statistics-filters .ant-space {
+    flex-wrap: wrap;
+  }
+  
+  .chart-container {
+    height: 300px;
+  }
+  
+  .summary-card .ant-statistic-content {
+    font-size: 20px;
+  }
+}

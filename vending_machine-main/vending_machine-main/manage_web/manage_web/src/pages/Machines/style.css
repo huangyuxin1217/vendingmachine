@@ -1,0 +1,117 @@
+/* src/pages/Machines/style.css */
+.machines-page {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .machine-stats {
+    margin-bottom: 16px;
+  }
+  
+  .stat-card {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+  }
+  
+  .stat-icon {
+    font-size: 20px;
+    margin-right: 8px;
+  }
+  
+  .filter-container {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .status-tabs {
+    margin-bottom: 20px;
+  }
+  
+  /* 不同状态机器行的颜色 */
+  .machine-fault {
+    background-color: rgba(255, 77, 79, 0.05);
+  }
+  
+  .machine-offline {
+    background-color: rgba(250, 173, 20, 0.05);
+  }
+  
+  .machine-warning {
+    background-color: rgba(250, 173, 20, 0.05);
+  }
+  
+  /* 详情页样式 */
+  .detail-section {
+    margin-bottom: 24px;
+  }
+  
+  .slot-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .slot-item {
+    width: 140px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .slot-item h5 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  
+  .slot-progress-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1;
+  }
+  
+  .slot-capacity {
+    font-size: 12px;
+    color: #999;
+  }
+  
+  .slot-stat {
+    margin-top: 8px;
+  }
+  
+  .slot-summary {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 24px;
+    padding: 12px;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+  }
+  
+  .log-time {
+    color: #999;
+    margin-bottom: 4px;
+  }
+  
+  .log-content {
+    margin: 0;
+  }
+  
+  .machine-actions {
+    margin-top: 24px;
+    display: flex;
+    gap: 12px;
+    border-top: 1px dashed #eee;
+    padding-top: 16px;
+  }

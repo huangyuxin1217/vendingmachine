@@ -1,0 +1,21 @@
+/* src/pages/Inventory/style.css */
+.inventory-page .ant-table-tbody .warning-row {
+  background-color: #f9edec;
+}
+
+.inventory-info {
+  margin-bottom: 20px;
+  padding: 12px;
+  background-color: #f8f8f8;
+  border-radius: 4px;
+}
+
+.inventory-stat {
+  margin-bottom: 16px;
+  display: flex;
+  gap: 16px;
+}
+
+.inventory-stat .ant-badge {
+  margin-right: 24px;
+}

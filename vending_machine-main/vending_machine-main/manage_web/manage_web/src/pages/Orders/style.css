@@ -1,0 +1,76 @@
+/* src/pages/Orders/style.css */
+.orders-page {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .stat-card {
+    margin-bottom: 0;
+  }
+  
+  .statistic-icon {
+    font-size: 20px;
+    margin-right: 8px;
+  }
+  
+  .order-filter-container {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .filter-group {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+  }
+  
+  .order-tabs {
+    margin-bottom: 16px;
+  }
+  
+  .order-amount {
+    font-size: 16px;
+    font-weight: 500;
+    color: #cf1322;
+  }
+  
+  .detail-section {
+    margin-bottom: 24px;
+  }
+  
+  .order-timeline {
+    margin: 24px 0;
+    border-top: 1px dashed #eee;
+    padding-top: 16px;
+  }
+  
+  .order-actions {
+    margin-top: 24px;
+    display: flex;
+    gap: 12px;
+    border-top: 1px dashed #eee;
+    padding-top: 16px;
+  }
+  
+  /* 不同状态订单行的颜色 */
+  .ant-table-tbody tr[data-row-key] td:last-child .ant-tag-success {
+    background-color: #f6ffed;
+  }
+  
+  .ant-table-tbody tr[data-row-key] td:last-child .ant-tag-processing {
+    background-color: #e6f7ff;
+  }
+  
+  .ant-table-tbody tr[data-row-key] td:last-child .ant-tag-warning {
+    background-color: #fffbe6;
+  }
+  
+  .ant-table-tbody tr[data-row-key] td:last-child .ant-tag-error,
+  .ant-table-tbody tr[data-row-key] td:last-child .ant-tag-default {
+    background-color: #fff1f0;
+  }

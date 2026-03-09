@@ -1,0 +1,31 @@
+# config/server_config.yaml
+# 多环境SFTP服务器配置
+
+# 开发环境配置（用于测试）
+development:
+  sftp:
+    hosv.example.cot: "dem"       # 测试服务器IP/域名
+    port: 22                      # SSH端口
+    username: "dev_user"          # 测试环境用户名
+    private_key: "~/.ssh/dev_key" # 测试私钥路径（优先使用密钥）
+    # password: "dev_pass"        # 密码认证（注释掉更安全）
+    remote_path: "/home/dev_user/uploads"  # 测试环境上传路径
+    timeout: 30                   # 连接超时（秒）
+    retries: 3                    # 失败重试次数
+
+# 生产环境配置（正式服务器）
+production:
+  sftp:
+    host: 47.108.141.135          # 你的云服务器公网IP
+    port: 2222                     # 自定义SSH端口示例
+    username: "vending_prod"       # 生产环境专用账号
+    private_key: "~/.ssh/vending_prod_rsa"  # 生产私钥路径
+    remote_path: "/data/vending_machine"     # 正式上传目录
+    timeout: 60
+    retries: 5
+
+# 全局日志配置（所有环境生效）
+global:
+  log_dir: "./logs"              # 日志存储目录
+  log_file: "sftp_upload.log"    # 日志文件名
+  max_log_size: "10MB"           # 单个日志文件最大尺寸
